@@ -1,7 +1,6 @@
 Lista de comandos e saídas
 
 ```bash
-
 root@ubuntu:~$ pwd
 /root
 root@ubuntu:~$ cd ~
@@ -46,4 +45,27 @@ total 4
 root@ubuntu:~/Projeto_A$ ls -l logs
 total 0
 -rw-r--r-- 1 root root 0 Oct  9 01:09 relatorio_backup.txt
-root@ubuntu:~/Projeto_A$ 
+root@ubuntu:~/Projeto_A$
+
+
+root@ubuntu:~/Projeto_A$ cd scripts
+root@ubuntu:~/Projeto_A/scripts$ nano fazer_backup.sh
+root@ubuntu:~/Projeto_A/scripts$ chmod +x fazer_backup.sh
+root@ubuntu:~/Projeto_A/scripts$ cd ~/Projeto_A/backup_geral
+bash: cd: /root/Projeto_A/backup_geral: No such file or directory
+root@ubuntu:~/Projeto_A/scripts$ cd ..
+root@ubuntu:~/Projeto_A$ cd ~/Projeto_A/backup_geral
+bash: cd: /root/Projeto_A/backup_geral: No such file or directory
+root@ubuntu:~/Projeto_A$ cd scripts
+root@ubuntu:~/Projeto_A/scripts$ ./fazer_backup.sh
+Iniciando o processo de backup...
+Backup concluido com sucesso em: Fri Oct  9 01:24:19 UTC 2026
+root@ubuntu:~/Projeto_A/scripts$ cd ..
+root@ubuntu:~/Projeto_A$ cd backup_geral
+root@ubuntu:~/Projeto_A/backup_geral$ ls -l
+total 4
+-rw-r--r-- 1 root root  0 Oct  9 01:24 relatorio_inicial.txt
+-rw-r--r-- 1 root root 44 Oct  9 01:24 sistema.log
+root@ubuntu:~/Projeto_A/backup_geral$
+
+```
