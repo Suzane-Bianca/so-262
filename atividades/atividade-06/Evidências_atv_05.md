@@ -1,5 +1,7 @@
 Lista de comandos e saídas
 
+```bash
+
 root@ubuntu:~$ pwd
 /root
 root@ubuntu:~$ cd ~
