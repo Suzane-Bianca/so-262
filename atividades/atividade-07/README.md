@@ -1,4 +1,4 @@
-#Suzane Bianca da Silva
+Suzane Bianca da Silva
 
 Explicação dos testes propostos:
 
